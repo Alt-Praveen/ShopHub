@@ -12,7 +12,7 @@ function ProductDetail() {
 
   useEffect(() => {
     async function fetchProducts() {
-      const response = await fetch(`http://localhost:3000/products/${id}`);
+      const response = await fetch(`${import.meta.env.VITE_APP_HOST}/products/${id}`);
       const data = await response.json();
       setProduct(data);
     }

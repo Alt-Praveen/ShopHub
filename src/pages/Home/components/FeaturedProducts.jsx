@@ -6,7 +6,7 @@ function FeaturedProducts() {
 
   useEffect(() => {
     async function fetchFeatured() {
-      const response = await fetch("http://localhost:3000/featured_products/")
+      const response = await fetch(`${import.meta.env.VITE_APP_HOST}/featured_products/`)
       const data = await response.json();
       setProducts(data);
     }

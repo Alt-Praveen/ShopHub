@@ -12,7 +12,7 @@ function Register() {
       password: event.target.password.value
     }
 
-    const response = await fetch("http://localhost:3000/register", {
+    const response = await fetch(`${import.meta.env.VITE_APP_HOST}/register`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(authDetails)
