@@ -15,7 +15,7 @@ function Hero() {
         </Link>
       </div>
       <div>
-        <img className="rounded-t-lg" src="public\hero.avif" alt="" />
+        <img className="rounded-t-lg" src="/hero.avif" alt="" />
       </div>
     </section>
   )

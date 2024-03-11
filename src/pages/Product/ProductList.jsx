@@ -14,7 +14,7 @@ function ProductList() {
 
   useEffect(() => {
     async function fetchProducts() {
-      const response = await fetch(`${process.env.REACT_APP_HOST}/products`);
+      const response = await fetch(`${import.meta.env.VITE_APP_HOST}/products`);
       const data = await response.json();
       // setProducts(data);
       initialProductList(data)
